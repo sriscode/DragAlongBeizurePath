@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1057B08F1F11E00200F4F24F /* DragAlongBeizurePath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragAlongBeizurePath.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1057B08F1F11E00200F4F24F /* DragAlongBezierPath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragAlongBezierPath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1057B0921F11E00200F4F24F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1057B0941F11E00200F4F24F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1057B0971F11E00200F4F24F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,7 +38,7 @@
 		1057B0861F11E00200F4F24F = {
 			isa = PBXGroup;
 			children = (
-				1057B0911F11E00200F4F24F /* DragAlongBeizurePath */,
+				1057B0911F11E00200F4F24F /* DragAlongBezierPath */,
 				1057B0901F11E00200F4F24F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,12 +46,12 @@
 		1057B0901F11E00200F4F24F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1057B08F1F11E00200F4F24F /* DragAlongBeizurePath.app */,
+				1057B08F1F11E00200F4F24F /* DragAlongBezierPath.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1057B0911F11E00200F4F24F /* DragAlongBeizurePath */ = {
+		1057B0911F11E00200F4F24F /* DragAlongBezierPath */ = {
 			isa = PBXGroup;
 			children = (
 				1057B0921F11E00200F4F24F /* AppDelegate.swift */,
@@ -61,15 +61,16 @@
 				1057B09B1F11E00200F4F24F /* LaunchScreen.storyboard */,
 				1057B09E1F11E00200F4F24F /* Info.plist */,
 			);
+			name = DragAlongBezierPath;
 			path = DragAlongBeizurePath;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1057B08E1F11E00200F4F24F /* DragAlongBeizurePath */ = {
+		1057B08E1F11E00200F4F24F /* DragAlongBezierPath */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1057B0A11F11E00200F4F24F /* Build configuration list for PBXNativeTarget "DragAlongBeizurePath" */;
+			buildConfigurationList = 1057B0A11F11E00200F4F24F /* Build configuration list for PBXNativeTarget "DragAlongBezierPath" */;
 			buildPhases = (
 				1057B08B1F11E00200F4F24F /* Sources */,
 				1057B08C1F11E00200F4F24F /* Frameworks */,
@@ -79,9 +80,9 @@
 			);
 			dependencies = (
 			);
-			name = DragAlongBeizurePath;
+			name = DragAlongBezierPath;
 			productName = DragAlongBeizurePath;
-			productReference = 1057B08F1F11E00200F4F24F /* DragAlongBeizurePath.app */;
+			productReference = 1057B08F1F11E00200F4F24F /* DragAlongBezierPath.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -96,11 +97,11 @@
 				TargetAttributes = {
 					1057B08E1F11E00200F4F24F = {
 						CreatedOnToolsVersion = 8.3.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
-			buildConfigurationList = 1057B08A1F11E00200F4F24F /* Build configuration list for PBXProject "DragAlongBeizurePath" */;
+			buildConfigurationList = 1057B08A1F11E00200F4F24F /* Build configuration list for PBXProject "DragAlongBezierPath" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -113,7 +114,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1057B08E1F11E00200F4F24F /* DragAlongBeizurePath */,
+				1057B08E1F11E00200F4F24F /* DragAlongBezierPath */,
 			);
 		};
 /* End PBXProject section */
@@ -262,11 +263,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DragAlongBeizurePath/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Sris.DragAlongBeizurePath;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SA.DragAlongBeizierPath;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -275,11 +278,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DragAlongBeizurePath/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Sris.DragAlongBeizurePath;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SA.DragAlongBeizierPath;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -287,7 +292,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1057B08A1F11E00200F4F24F /* Build configuration list for PBXProject "DragAlongBeizurePath" */ = {
+		1057B08A1F11E00200F4F24F /* Build configuration list for PBXProject "DragAlongBezierPath" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1057B09F1F11E00200F4F24F /* Debug */,
@@ -296,7 +301,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1057B0A11F11E00200F4F24F /* Build configuration list for PBXNativeTarget "DragAlongBeizurePath" */ = {
+		1057B0A11F11E00200F4F24F /* Build configuration list for PBXNativeTarget "DragAlongBezierPath" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1057B0A21F11E00200F4F24F /* Debug */,

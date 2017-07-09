@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  DragAlongBeizurePath
+//  DragAlongbezierPath
 //
 //  Created by SA on 7/8/17.
 //  Copyright © 2017 Sris. All rights reserved.
@@ -17,18 +17,18 @@ class ViewController: UIViewController {
     var p2 : CGPoint!
     var emojiCenter: CGPoint!
     
-    var beizurePath = UIBezierPath()
-    var beizurePathYMax: CGFloat!
+    var bezierPath = UIBezierPath()
+    var bezierPathYMax: CGFloat!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        drawBeizurePath()
-        let dragPan = UIPanGestureRecognizer(target: self, action: #selector(dragEmotionOnBeizure(recognizer:)))
+        drawBezierPath()
+        let dragPan = UIPanGestureRecognizer(target: self, action: #selector(dragEmotionOnBezier(recognizer:)))
         view.addGestureRecognizer(dragPan)
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        //set the emojiView center at randon point on Beizure path. Setting the starting point here
+        //set the emojiView center at randon point on Bezier path. Setting the starting point here
         emojiView.center = p0
         //store the initial position of emoji
         emojiCenter = p0
@@ -36,9 +36,9 @@ class ViewController: UIViewController {
 
  
     /*
-     Draw Beizure Quad curve and get the path.
+     Draw Bezier Quad curve and get the path.
      */
-    func drawBeizurePath() {
+    func drawBezierPath() {
         
         let maxLeftPoint = emojiView.center
         p0 = CGPoint(x: view.center.x + 30, y: view.center.y - 200)
@@ -49,21 +49,21 @@ class ViewController: UIViewController {
                           y: halfPoint1D(p0: p0.y, p2: p2.y, control: maxLeftPoint.y))
         
         
-        beizurePath.move(to: p0)
-        beizurePath.addQuadCurve(to: p2, controlPoint: p1)
+        bezierPath.move(to: p0)
+        bezierPath.addQuadCurve(to: p2, controlPoint: p1)
         
         let shapeLayer = CAShapeLayer()
-        shapeLayer.path = beizurePath.cgPath
+        shapeLayer.path = bezierPath.cgPath
         shapeLayer.fillColor = UIColor.clear.cgColor
         shapeLayer.strokeColor = UIColor.green.cgColor
         shapeLayer.lineWidth = 3.0
         view.layer.addSublayer(shapeLayer)
         emojiView.translatesAutoresizingMaskIntoConstraints = false
-        emojiView.center = CGPoint(x: 100, y: 100)
         
-        //Store the max Y distance covered by UIBeizurePath. It will be useful to calculate the intermidiate point on curve 
+        //Store the max Y distance covered by UIbezierPath. It will be useful to calculate the intermidiate point on curve 
         // at the distance y from the start point po
-        beizurePathYMax = p2.y - p0.y
+        bezierPathYMax = p2.y - p0.y
+        
     }
     
     
@@ -86,12 +86,12 @@ class ViewController: UIViewController {
     }
     
     
-    func dragEmotionOnBeizure(recognizer: UIPanGestureRecognizer) {
+    func dragEmotionOnBezier(recognizer: UIPanGestureRecognizer) {
         
         let point = recognizer.location(in: view)
         let distanceY = point.y - emojiCenter.y
         // get the value between 0 & 1. 0 represents and po and 1 represent p2.
-        var distanceYInRange = distanceY / beizurePathYMax
+        var distanceYInRange = distanceY / bezierPathYMax
         distanceYInRange = distanceYInRange > 0 ? distanceYInRange : -distanceYInRange
         
         if distanceYInRange >= 1 || distanceYInRange <= 0 {
@@ -99,7 +99,7 @@ class ViewController: UIViewController {
             return
         }
         
-        // get the x,y point on the beizure path at a distance distanceYInRange from p.
+        // get the x,y point on the Bezier path at a distance distanceYInRange from p.
         let newY = getPointAtPercent(t: Float(distanceYInRange), start: Float(p0.y) , c1: Float(p1.y), end: Float(p2.y))
         
         let newX = getPointAtPercent(t: Float(distanceYInRange), start: Float(p0.x) , c1: Float(p1.x), end: Float(p2.x))

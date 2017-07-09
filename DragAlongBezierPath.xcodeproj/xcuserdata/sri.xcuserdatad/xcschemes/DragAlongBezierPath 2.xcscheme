@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1057B08E1F11E00200F4F24F"
-               BuildableName = "DragAlongBeizurePath.app"
-               BlueprintName = "DragAlongBeizurePath"
-               ReferencedContainer = "container:DragAlongBeizurePath.xcodeproj">
+               BuildableName = "DragAlongBezierPath.app"
+               BlueprintName = "DragAlongBezierPath"
+               ReferencedContainer = "container:DragAlongBezierPath.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1057B08E1F11E00200F4F24F"
-            BuildableName = "DragAlongBeizurePath.app"
-            BlueprintName = "DragAlongBeizurePath"
-            ReferencedContainer = "container:DragAlongBeizurePath.xcodeproj">
+            BuildableName = "DragAlongBezierPath.app"
+            BlueprintName = "DragAlongBezierPath"
+            ReferencedContainer = "container:DragAlongBezierPath.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1057B08E1F11E00200F4F24F"
-            BuildableName = "DragAlongBeizurePath.app"
-            BlueprintName = "DragAlongBeizurePath"
-            ReferencedContainer = "container:DragAlongBeizurePath.xcodeproj">
+            BuildableName = "DragAlongBezierPath.app"
+            BlueprintName = "DragAlongBezierPath"
+            ReferencedContainer = "container:DragAlongBezierPath.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1057B08E1F11E00200F4F24F"
-            BuildableName = "DragAlongBeizurePath.app"
-            BlueprintName = "DragAlongBeizurePath"
-            ReferencedContainer = "container:DragAlongBeizurePath.xcodeproj">
+            BuildableName = "DragAlongBezierPath.app"
+            BlueprintName = "DragAlongBezierPath"
+            ReferencedContainer = "container:DragAlongBezierPath.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

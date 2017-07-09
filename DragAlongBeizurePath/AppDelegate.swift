@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  DragAlongBeizurePath
 //
-//  Created by Sri Adatrao on 7/8/17.
+//  Created by SA on 7/8/17.
 //  Copyright © 2017 Sris. All rights reserved.
 //
 

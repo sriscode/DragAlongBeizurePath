@@ -1,4 +1,4 @@
-# DragAlongBeizurePath
+# Drag Along BeizurePath in Swift
 Drag UIView along the UIBeizurePath 
 
 This code the solution to drag the uiview along the UIBeizurePath curve (QuadCurve).
